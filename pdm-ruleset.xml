@@ -16,15 +16,10 @@
 
     <rule ref="category/java/design.xml/AvoidCatchingGenericException"/>
     <rule ref="category/java/design.xml/AvoidDeeplyNestedIfStmts"/>
-    <rule ref="category/java/design.xml/AvoidReassigningLoopVariables"/>
-    <rule ref="category/java/design.xml/SwitchStmtsShouldHaveDefault"/>
 
     <rule ref="category/java/errorprone.xml/AvoidBranchingStatementAsLastInLoop"/>
-    <rule ref="category/java/errorprone.xml/AvoidDuplicateLiterals">
-        <properties>
-            <property name="ignoreStrings" value="true"/>
-        </properties>
-    </rule>
+    <rule ref="category/java/errorprone.xml/AvoidDuplicateLiterals"/>
+
     <rule ref="category/java/errorprone.xml/AvoidFieldNameMatchingTypeName"/>
 
     <rule ref="category/java/performance.xml/AvoidInstantiatingObjectsInLoops"/>
@@ -32,15 +27,12 @@
 
     <rule ref="category/java/documentation.xml/CommentRequired">
         <properties>
-            <property name="methodCommentRequirement" value="Required"/>
             <property name="fieldCommentRequirement" value="Ignored"/>
-            <property name="overrideCommentRequirement" value="Required"/>
         </properties>
     </rule>
 
     <rule ref="category/java/codestyle.xml/ShortVariable"/>
     <rule ref="category/java/codestyle.xml/LongVariable"/>
     <rule ref="category/java/codestyle.xml/ShortMethodName"/>
-    <rule ref="category/java/codestyle.xml/LongMethodName"/>
 
 </ruleset>

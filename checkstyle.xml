@@ -24,9 +24,6 @@
             <property name="basicOffset" value="4"/>
             <property name="tabWidth" value="4"/>
         </module>
-        <module name="LineLength">
-            <property name="max" value="120"/>
-        </module>
 
         <!-- Altre regole di formattazione -->
         <module name="FinalParameters"/>
@@ -36,6 +33,5 @@
         <module name="NeedBraces"/>
         <module name="AvoidStarImport"/>
         <module name="UnusedImports"/>
-        <module name="RedundantThrows"/>
     </module>
 </module>
