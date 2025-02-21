@@ -1,7 +1,8 @@
-version: '3.8'
 services:
   app:
     build: .
     ports:
       - "8080:8080"
     container_name: asd_app
+    stdin_open: true
+    tty: true

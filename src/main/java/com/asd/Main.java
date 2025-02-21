@@ -22,7 +22,7 @@ public final class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Inserisci il primo numero: ");
-        int num1 = scanner.nextInt();
+        int num1 = ();
 
         System.out.print("Inserisci il secondo numero: ");
         int num2 = scanner.nextInt();
