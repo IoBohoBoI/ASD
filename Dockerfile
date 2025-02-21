@@ -1,4 +1,4 @@
-# Usa un'immagine di base con JDK 23
+# Usa un'immagine di base con JDK 23 dal Docker Hub
 FROM openjdk:21
 
 # Imposta la directory di lavoro

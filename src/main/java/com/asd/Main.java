@@ -14,7 +14,10 @@ public final class Main {
         // Costruttore vuoto per impedire l'istanziazione.
     }
 
-
+    /**
+     * Metodo principale della classe Main
+     * @param args
+     */
     public static void main(final String[] args) {
         Scanner scanner = new Scanner(System.in);
 

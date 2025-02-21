@@ -46,7 +46,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Plugin per compilare il codice -->
+            <!-- Plugin per configurare il compilatore Java -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -57,7 +57,7 @@
                 </configuration>
             </plugin>
 
-            <!-- PMD Plugin -->
+            <!-- Plugin per eseguire analisi statica del codice con PMD per rilevare potenziali problemi -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
@@ -79,7 +79,7 @@
                 </configuration>
             </plugin>
 
-            <!-- CheckStyle Plugin -->
+            <!-- Plugin per eseguire analisi statica del codice con CheckStyle per effettuare controlli di stile del codice -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>

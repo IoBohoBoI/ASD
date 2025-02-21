@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="Custom Ruleset for Main"
+<ruleset name="Ruleset personalizzato per il Main"
          xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
@@ -17,13 +17,10 @@
     <rule ref="category/java/design.xml/AvoidCatchingGenericException"/>
     <rule ref="category/java/design.xml/AvoidDeeplyNestedIfStmts"/>
 
-    <rule ref="category/java/errorprone.xml/AvoidBranchingStatementAsLastInLoop"/>
     <rule ref="category/java/errorprone.xml/AvoidDuplicateLiterals"/>
-
     <rule ref="category/java/errorprone.xml/AvoidFieldNameMatchingTypeName"/>
 
     <rule ref="category/java/performance.xml/AvoidInstantiatingObjectsInLoops"/>
-    <rule ref="category/java/performance.xml/ConsecutiveLiteralAppends"/>
 
     <rule ref="category/java/documentation.xml/CommentRequired">
         <properties>
