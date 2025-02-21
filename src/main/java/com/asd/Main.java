@@ -1,8 +1,9 @@
 package com.asd;
 
 import java.util.Scanner;
+
 /**
- * Classe principale dell'applicazione ASD.
+ * Classe principale del progetto.
  */
 public final class Main {
 
@@ -13,11 +14,7 @@ public final class Main {
         // Costruttore vuoto per impedire l'istanziazione.
     }
 
-    /**
-     * Metodo principale del programma.
-     *
-     * @param args argomenti della riga di comando.
-     */
+
     public static void main(final String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -37,7 +34,7 @@ public final class Main {
      * Metodo per eseguire la somma di due numeri interi.
      * @param a
      * @param b
-     * @return la somma di a + b
+     * @return Somma di a + b.
      */
     public static int somma(final int a, final int b) {
         return a + b;
