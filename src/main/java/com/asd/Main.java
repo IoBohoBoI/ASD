@@ -1,17 +1,45 @@
 package com.asd;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.util.Scanner;
+/**
+ * Classe principale dell'applicazione ASD.
+ */
+public final class Main {
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+    /**
+     * Costruttore privato per evitare istanziazione della classe.
+     */
+    private Main() {
+        // Costruttore vuoto per impedire l'istanziazione.
+    }
+
+    /**
+     * Metodo principale del programma.
+     *
+     * @param args argomenti della riga di comando.
+     */
+    public static void main(final String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Inserisci il primo numero: ");
+        int num1 = scanner.nextInt();
+
+        System.out.print("Inserisci il secondo numero: ");
+        int num2 = scanner.nextInt();
+
+        int somma = somma(num1, num2);
+        System.out.println("La somma è: " + somma);
+
+        scanner.close();
+    }
+
+    /**
+     * Metodo per eseguire la somma di due numeri interi.
+     * @param a
+     * @param b
+     * @return la somma di a + b
+     */
+    public static int somma(final int a, final int b) {
+        return a + b;
     }
 }
