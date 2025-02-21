@@ -31,6 +31,21 @@
 
     <build>
         <plugins>
+            <plugin>
+                <!-- Plugin per configurare il manifest del JAR -->
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.0.2</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>target/</classpathPrefix>
+                            <mainClass>com.asd.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+
             <!-- Plugin per compilare il codice -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -56,10 +71,12 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <targetJdk>20</targetJdk>
+                    <rulesets>
+                        <ruleset>C:/Users/ioboh/IdeaProjects/ASD/pmd-rulesets.xml</ruleset>
+                    </rulesets>
+                    <failOnViolation>true</failOnViolation>
                 </configuration>
             </plugin>
-
 
             <!-- CheckStyle Plugin -->
             <plugin>
